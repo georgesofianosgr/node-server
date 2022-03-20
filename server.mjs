@@ -7,7 +7,6 @@ const loadAndRunModule = async (moduleName, data) => {
 }
 
 app.get('/module/:module', async function (req, res) {
-  console.log(req.params.module);
   try {
     const moduleName = req.params.module;
     const response = await loadAndRunModule(moduleName)
